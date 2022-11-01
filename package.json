@@ -1,25 +1,13 @@
 {
-  "name": "",
-  "id": null,
-  "key": "REST-4",
-  "type": "REST",
-  "arguments": {},
-  "configurationArguments": {},
-  "metaData": {
-    "icon": "https://myjsonapp9577.herokuapp.com/icon.png",
-    "category": "message",
-    "iconSmall": null,
-    "statsContactIcon": null,
-    "original_icon": "icon.png"
+  "name": "jb-activity",
+  "version": "0.0.1",
+  "engines": {
+    "node": "10.x"
   },
-  "editable": true,
-  "outcomes": [
-    {
-      "next": "WAITBYDURATION-1",
-      "metaData": {
-        "invalid": false
-      }
-    }
-  ],
-  "errors": null
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
