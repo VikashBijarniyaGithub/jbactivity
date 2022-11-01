@@ -1,13 +1,67 @@
 {
   "name": "jb-activity",
-  "version": "0.0.1",
-  "engines": {
-    "node": "10.x"
+  "id": "4770f066-e414-4e4f-9cab-fb9e735b9c83",
+  "key": "REST-1",
+  "type": "REST",
+  "arguments": {
+    "executionMode": "{{Context.ExecutionMode}}",
+    "definitionId": "{{Context.DefinitionId}}",
+    "activityId": "{{Activity.Id}}",
+    "contactKey": "{{Context.ContactKey}}",
+    "execute": {
+      "inArguments": [
+        {
+          "contactKey": "{{Contact.Key}}"
+        },
+        {
+          "FirstName": "Contact.Attribute.CustomActivityDE_V.FirstName}}"
+        },
+        {
+          "LastName": "{{Contact.Attribute.CustomActivityDE_V.LastName}}"
+        }
+      ],
+      "url": "https://greytrixindia1-developer-edition.ap24.force.com/vicky/services/apexrest/Account"
+    },
+    "testExecute": "",
+    "startActivityKey": "{{Context.StartActivityKey}}",
+    "definitionInstanceId": "{{Context.DefinitionInstanceId}}",
+    "requestObjectId": "{{Context.RequestObjectId}}"
   },
-  "scripts": {
-    "start": "node app.js"
+  "configurationArguments": {
+    "save": "",
+    "testSave": "",
+    "publish": {
+      "url": "https://greytrixindia1-developer-edition.ap24.force.com/vicky/services/apexrest/Account"
+    },
+    "testPublish": "",
+    "unpublish": "",
+    "stop": "",
+    "testStop": "",
+    "testUnpublish": "",
+    "partnerActivityId": "",
+    "validate": "",
+    "testValidate": "",
+    "outArgumentSchema": "",
+    "executeSchema": ""
   },
-  "dependencies": {
-    "express": "^4.16.4"
-  }
+  "metaData": {
+    "icon": "https://myjsonapp9577.herokuapp.com/icon.png",
+    "category": "message",
+    "iconSmall": null,
+    "statsContactIcon": null,
+    "original_icon": "icon.png",
+    "isConfigured": false
+  },
+  "editable": true,
+  "outcomes": [
+    {
+      "key": "2f7a040c-1cc6-4998-b191-7ababf655209",
+      "next": "WAITBYDURATION-1",
+      "arguments": {},
+      "metaData": {
+        "invalid": false
+      }
+    }
+  ],
+  "errors": null
 }
